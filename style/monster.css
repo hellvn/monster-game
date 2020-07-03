@@ -1,0 +1,36 @@
+body{
+    text-align: center;
+    background-color: black;
+    background-image: url("../images/lightning.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+@keyframes my {
+    0% { color: #31b44b}
+    25%{ color: #4cb468}
+    50%{ color: #ffffff}
+    75%{ color: #68b47d}
+    100%{ color: #4cb468}
+}
+p{
+    animation: my 3000ms infinite;
+}
+.container{
+    margin-top: 100px;
+}
+.content{
+    margin-left: 666px;
+    background-image: url("../images/frame.png");
+    background-repeat: no-repeat;
+    height: 629px;
+    width: 546px;
+}
+.puzze {
+    margin-bottom: -4px;
+}
+.game{
+    padding-top: 84px;
+    margin-left: 90px;
+    margin-right: 89px;
+    overflow: hidden;
+}
