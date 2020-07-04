@@ -1,5 +1,4 @@
 body{
-    text-align: center;
     background-color: black;
     background-image: url("../images/lightning.gif");
     background-repeat: no-repeat;
@@ -16,10 +15,11 @@ p{
     animation: my 3000ms infinite;
 }
 .container{
-    margin-top: 100px;
+    text-align: center;
+    margin: 0px auto;
 }
 .content{
-    margin-left: 666px;
+    display: inline-block;
     background-image: url("../images/frame.png");
     background-repeat: no-repeat;
     height: 629px;
