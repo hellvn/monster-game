@@ -1,5 +1,23 @@
 var oneClick=0, twoClick=0, threeClick=0, fourClick=0;
 var soundfx = document.getElementById('sfx');
+var bgm = document.getElementById('bgm');
+var bgfx = document.getElementById('bgfx');
+$("#bgm_button").click(function () {
+    $("#bgm_button").toggleClass('active');
+    $("#bgmIcon").toggleClass('fa-volume-xmark');
+    $("#bgmIcon").toggleClass('fa-volume-high');
+    if (bgm.paused) {
+        bgm.play();
+        bgfx.play();
+
+
+    } else {
+        bgm.pause();
+        bgm.currentTime = 0
+        bgfx.pause();
+    }
+})
+
 $("#one").click(function(){
     if (oneClick < 9){
         $("#one").animate({marginLeft:"-=367px"},500);
